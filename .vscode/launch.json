@@ -16,6 +16,17 @@
             "remoteRoot": "Path to the Remote Directory Containing the Program"
         },
         {
+            "name": "Attach to Kubernetes Pod (.NET Core)",
+            "type": "cloudcode.kubernetes",
+            "request": "attach",
+            "language": "NETCore",
+            "podSelector": {
+                "app": "deployment-name"
+            },
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "Path to the Remote Directory Containing the Program"
+        },
+        {
             "name": "Deploy Cloud Function",
             "type": "cloudcode.cloudfunctions",
             "request": "launch",
